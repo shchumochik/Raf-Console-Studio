@@ -5,55 +5,51 @@ Strapi 5, Next.js 14, Node v 20.14.0
 
 ## Начнём
 
-## 🛠 Prerequisites
+## 🛠 Подготовка
 
-правильные переменные окружения для каждой части:
+## 1. Clone Raf Console Studio
+
+Копируем в подготовленную папку наш код проекта удобным нам способом
+
+# Правильные переменные окружения для каждой части:
 
 Strapi (example in `./strapi/.env.example`):
   - `STRAPI_ADMIN_CLIENT_URL=<url-of-nextjs>`
   - `STRAPI_ADMIN_CLIENT_PREVIEW_SECRET=<a-random-token>`
+    То есть, в директории /strapi мы копируем .env.example и вставляем в то же место, где он находится, только меняем название на .env
 
 - Create a `./strapi/.env` file with these variables
 
 Next.js (example in `./next/.env.sample`):
   - `NEXT_PUBLIC_API_URL=<url-of-strapi>` (mandatory)
   - `PREVIEW_SECRET=<the-same-random-token-as-for-strapi>`
+    То есть, в директории /next мы копируем .env.example и вставляем в то же место, где он находится, только меняем название на .env
 
 - Create a `./next/.env` file with these variables
 
-## 1. Clone Raf Console Studio
+## 2. Запускаем Strapi CMS
 
-- Navigate to your project folder by running `cd Raf`.
-
-## 2. Start Strapi
-
-Take a deep breath. It's time to power up the Strapi engines. Navigate to your ./my-projects/launchpad/strapi folder by running:
-
-Navigate to your `./my-projects/Raf/strapi` folder by running `cd strapi` from your command line.
-
-- Run the following command in your `./Raf/strapi` folder:
+Переходим в `./my-projects/Raf-Console-Studio/strapi` папку и запускаем следющую команду:
 
 ```
 yarn && yarn seed && yarn develop
 ```
 
-This will install dependencies, sprinkle in some data magic, and run the server.
+- Всё, у нас запустился проект админ-панели) Но кончено же это произойдёт не моментально
 
-## 3. Start Next.js
+## 3. Запускаем Next.js 14
 
-Navigate to your `./my-projects/Raf/next` folder by running `cd next` from your command line.
-
-- Run the following command in your `./Raf/next` folder
+Переходим в `./my-projects/Raf-Console-Studio/next` папку и запускаем следющую команду:
 
 ```
 yarn && yarn build && yarn start
 ```
 
-This installs dependencies, builds your project, and starts your server.
+- Всё, у нас запустился проект админ-панели) Но кончено же это произойдёт не моментально
 
-## Features Overview ✨
+## Разное, но нужное ✨
 
-### User
+### Yarn
 
 <br />
 
