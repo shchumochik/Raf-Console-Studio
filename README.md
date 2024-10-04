@@ -18,14 +18,14 @@ Strapi (example in `./strapi/.env.example`):
   - `STRAPI_ADMIN_CLIENT_PREVIEW_SECRET=<a-random-token>` <br />
     ***То есть, в директории /strapi мы копируем .env.example и вставляем в то же место, где он находится, только меняем название на .env***
 
-- Create a `./strapi/.env` file with these variables
+- У нас создан `./strapi/.env` файл
 
 Next.js (example in `./next/.env.sample`):
   - `NEXT_PUBLIC_API_URL=<url-of-strapi>` (mandatory)
   - `PREVIEW_SECRET=<the-same-random-token-as-for-strapi>`<br />
     ***То есть, в директории /next мы копируем .env.example и вставляем в то же место, где он находится, только меняем название на .env***
 
-- Create a `./next/.env` file with these variables
+- У нас создан `./next/.env` файл
 
 ## 2. Запускаем Strapi CMS
 
