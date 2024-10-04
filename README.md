@@ -15,14 +15,14 @@ Strapi 5, Next.js 14, Node v 20.14.0, npm, Yarn
 
 Strapi (example in `./strapi/.env.example`):
   - `STRAPI_ADMIN_CLIENT_URL=<url-of-nextjs>`
-  - `STRAPI_ADMIN_CLIENT_PREVIEW_SECRET=<a-random-token>`
+  - `STRAPI_ADMIN_CLIENT_PREVIEW_SECRET=<a-random-token>` <br />
     ***То есть, в директории /strapi мы копируем .env.example и вставляем в то же место, где он находится, только меняем название на .env***
 
 - Create a `./strapi/.env` file with these variables
 
 Next.js (example in `./next/.env.sample`):
   - `NEXT_PUBLIC_API_URL=<url-of-strapi>` (mandatory)
-  - `PREVIEW_SECRET=<the-same-random-token-as-for-strapi>`
+  - `PREVIEW_SECRET=<the-same-random-token-as-for-strapi>`<br />
     ***То есть, в директории /next мы копируем .env.example и вставляем в то же место, где он находится, только меняем название на .env***
 
 - Create a `./next/.env` file with these variables
