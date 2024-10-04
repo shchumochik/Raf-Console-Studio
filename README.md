@@ -1,11 +1,11 @@
 # Raf Console Studio - Official Strapi Demo
 
 Наш стэк:
-Strapi 5, Next.js 14, Node v 20.14.0
+Strapi 5, Next.js 14, Node v 20.14.0, npm, Yarn
 
 ## Начнём
 
-## 🛠 Подготовка
+# 🛠 Подготовка
 
 ## 1. Clone Raf Console Studio
 
@@ -16,14 +16,14 @@ Strapi 5, Next.js 14, Node v 20.14.0
 Strapi (example in `./strapi/.env.example`):
   - `STRAPI_ADMIN_CLIENT_URL=<url-of-nextjs>`
   - `STRAPI_ADMIN_CLIENT_PREVIEW_SECRET=<a-random-token>`
-    То есть, в директории /strapi мы копируем .env.example и вставляем в то же место, где он находится, только меняем название на .env
+    ***То есть, в директории /strapi мы копируем .env.example и вставляем в то же место, где он находится, только меняем название на .env***
 
 - Create a `./strapi/.env` file with these variables
 
 Next.js (example in `./next/.env.sample`):
   - `NEXT_PUBLIC_API_URL=<url-of-strapi>` (mandatory)
   - `PREVIEW_SECRET=<the-same-random-token-as-for-strapi>`
-    То есть, в директории /next мы копируем .env.example и вставляем в то же место, где он находится, только меняем название на .env
+    ***То есть, в директории /next мы копируем .env.example и вставляем в то же место, где он находится, только меняем название на .env***
 
 - Create a `./next/.env` file with these variables
 
@@ -32,7 +32,7 @@ Next.js (example in `./next/.env.sample`):
 Переходим в `./my-projects/Raf-Console-Studio/strapi` папку и запускаем следющую команду:
 
 ```
-yarn && yarn seed && yarn develop
+yarn && yarn build && yarn develop
 ```
 
 - Всё, у нас запустился проект админ-панели) Но кончено же это произойдёт не моментально
@@ -53,12 +53,10 @@ yarn && yarn build && yarn start
 
 <br />
 
-**An intuitive, minimal editor** The editor allows you to pull in dynamic blocks of content. It’s 100% open-source, and it’s fully extensible.<br />
-**Media Library** Upload images, video or any files and crop and optimize their sizes, without quality loss.<br />
-**Flexible content management** Build any type of category, section, format or flow to adapt to your needs. <br />
-**Sort and Filter** Built-in sorting and filtering: you can manage thousands of entries without effort.<br />
-**User-friendly interface** The most user-friendly open-source interface on the market.<br />
-**SEO optimized** Easily manage your SEO metadata with a repeatable field and use our Media Library to add captions, notes, and custom filenames to optimize the SEO of media assets.<br /><br />
+**yarn** Устанавливает указанные ранее библиотеки, без которых ничего не установится.<br />
+**yarn build** Билдит проект, тут могут вылезать ошибки и это к лучшему, если нет никаких ошибок, то версия нормальная и рабочая.<br />
+**yarn start** Запускает проект, но не надо забывать, что если мы заранее не сбилдили проект, то будет версия последнего билда.<br />
+**yarn develop** Запускает проект в режими разработчика, в этом режими ЗАПРЕЩЕНО хостить проект в интернет, только запускать локально. В этом режиме всё будет работать и применяться моментально, без надобности **yarn build**.<br />
 
 ### Global
 
@@ -77,10 +75,6 @@ yarn && yarn build && yarn start
 
 [Docs](https://docs.strapi.io) • [Demo](https://strapi.io/demo) • [Forum](https://forum.strapi.io/) • [Discord](https://discord.strapi.io) • [Youtube](https://www.youtube.com/c/Strapi/featured) • [Strapi Design System](https://design-system.strapi.io/) • [Marketplace](https://market.strapi.io/) • [Clou Free Trial](https://cloud.strapi.io) 
 
-## Todo
-
-- [ ] Implement the community Strapi preview plugin
-- [ ] Populate creator fields when it'll work on Strapi 5 (article authors information are missing)
 
 ## Customization
 
